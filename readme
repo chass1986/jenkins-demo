@@ -1,0 +1,17 @@
+1. install JAVA JDK:
+   sudo apt install openjdk-8-jdk
+
+2. run the following commands
+   wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+   sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+   sudo apt update
+
+3. install jenkins
+   sudo apt-get install jenkins -y
+
+
+- to check jenkins status:
+  sudo systemctl status jenkins
+  to restart/stop/start jenkins just replace status in previous command with (stop, start or restart)
+
+- to update jenkins port (default: 8080) ???
